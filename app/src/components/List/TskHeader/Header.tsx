@@ -1,12 +1,13 @@
 import { Fab } from "@mui/material";
 import EditIcon from "@mui/icons-material/Edit";
 import { useNavigate } from "react-router-dom";
+import { CREATE } from "../../../utils/CONSTS";
 
 export const TskHeader = () => {
     const navigate = useNavigate();
 
     const handleClick = (e: any) => {
-        navigate("/create");
+        navigate(CREATE);
     };
 
     return (
